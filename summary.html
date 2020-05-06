@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GANLand</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>  
+  <body>
+    
+      <div class="modal-content">
+        
+        <div class="top-content">
+          <h2><a class="clear" href="index.html">Overall Performance</a></h2>
+          <button class="clear" onclick="location.href='index.html';">Return Home  > </button>
+        </div>
+
+          <div class="explanation">
+            <p><b>Congratulations!</b> You’ve successfully distinguished between the photos and generated images at each stage of the training process. This page shows you a summary of your performance overall. The chart below indicates what <b>level</b> you were at at each <b>round</b> of the training process. If you were unable to acheive a high performance score in a particular round, you were prompted to repeat the same level in the next round. The chart should indicate where along the process you found things easy, and where things got more challenging.</p>
+          </div>
+
+          <div class="chart-container">
+            <canvas id="myChart2"></canvas>
+          </div>
+
+          <div class="explanation">
+            <p>In addition to the number of rounds per level, the following chart also presents your <b>sensitivity</b>, <b>specificity</b>, and <b>accuracy</b> for all the rounds you participated in. Plotting these three characteristics over the rounds allows us to see how performance is changing over time in greater detail. Something this experience demonstrates is that <b>accuracy isn't the only important trait to measure</b>: false positives and false negatives are just as important to take into account as the total number of true guesses.</p>
+          </div>
+
+          <div class="chart-container">
+            <canvas id="myChart1"></canvas>
+          </div>
+
+          <div class="explanation">
+            <p><i>Additional information will be added here about what constitutes a "level", with respect to epoch number, dataset, and model. A description of where all the image data for the experience will also be provided here, as well as relevant links to those sources. Finally, attribution, creative license mention, and further reading to be mentioned here.</i></p>
+          </div>
+
+          <button class="clear" onclick="location.href='index.html';">Return Home  > </button>
+
+      </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="summary.js"></script>
+
+  </body>
+</html>

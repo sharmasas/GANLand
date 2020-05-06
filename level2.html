@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GANLand</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>  
+  <body>
+    <div class="center-container">
+      <div class="button-container">
+        <button id="result-btn">View Results</button>
+      </div>
+      <div class="stacked-cards"></div>
+        <div class="button-container">
+          <button id="real-btn" class="js-remove-card">Real Image</button>
+          <button id="gan-btn" class="js-remove-card">Generated Image</button>
+        </div>    
+    </div>
+    <section class="modal">
+      <div class="modal-content">
+        
+        <div class="top-content">
+          <h2><a id="round-title" href="index.html"></a></h2>
+          <button id="level-set">Next Round  > </button>
+        </div>
+
+          <div class="explanation">
+            <p id="feedback"></p>
+          </div>
+
+          <div class="chart-container">
+            <canvas id="myChart"></canvas>
+          </div>
+
+          <div class="filter-controls">
+            <p class="filter-label">Review Individual Images </p>
+
+            <div id="myBtnContainer">
+              <span>Filter by | </span>
+              <a class="btn active" onclick="filterSelection('all')"> All Images</a>
+              <a class="btn" onclick="filterSelection('classCorrect')">Correctly Identified</a>
+              <a class="btn" onclick="filterSelection('classIncorrect')">Incorrectly Identified</a>
+            </div>
+
+          </div>  
+
+        <div class="img-stack">
+          <!-- image array goes here! -->
+        </div>
+
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="level2.js"></script>
+
+  </body>
+</html>
